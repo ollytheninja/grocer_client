@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "grocer_client"
+version = "0.1.0"
+description = "Unofficial client for interacting with the grocer.nz API"
+authors =  ["Oliver Ewert <olly@ewert.co.nz>" ]
+readme = "README.md"
+package-mode = true
+license = "MIT"
+homepage = "https://github.com/ollytheninja/grocer_client"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.32.3"
+pytz = "^2024.1"
+cloudscraper = "^1.2.71"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+ruff = "^0.5.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
